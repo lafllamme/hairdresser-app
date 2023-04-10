@@ -7,6 +7,7 @@ public/fonts/           # Ignore font files
 public/images/          # Ignore image files
 var/cache/              # Ignore Symfony's cache files
 var/log/                # Ignore Symfony's log files
+var/                    # Ignore Symfony's var directory
 
 # Files
 .env                    # Ignore environment files
