@@ -1,10 +1,25 @@
+# Directories
+node_modules/           # Ignore Node.js packages
+public/build/           # Ignore Vite's build output
+public/bundles/         # Ignore Symfony's asset bundles
+public/fonts/           # Ignore font files
+public/images/          # Ignore image files
+var/cache/              # Ignore Symfony's cache files
+var/log/                # Ignore Symfony's log files
 
-###> symfony/framework-bundle ###
-/.env.local
-/.env.local.php
-/.env.*.local
-/config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
-/var/
-/vendor/
-###< symfony/framework-bundle ###
+# Files
+.env                    # Ignore environment files
+*.log                   # Ignore log files
+*.swp                   # Ignore Vim swap files
+*.sqlite                # Ignore SQLite databases
+*.sqlite3               # Ignore SQLite3 databases
+*.bak                   # Ignore backup files
+*.zip                   # Ignore ZIP archives
+*.gz                    # Ignore Gzip archives
+*.tar                   # Ignore Tar archives
+*.rar                   # Ignore RAR archives
+
+# Directories
+.idea/                 # Ignore PhpStorm project files
+.vscode/               # Ignore Visual Studio Code workspace settings
+
