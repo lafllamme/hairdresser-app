@@ -1,0 +1,43 @@
+name: my-project
+type: php:8.0
+
+mounts:
+  '/app/public': 'web'
+
+build:
+  flavor: none
+
+runtime:
+  extensions:
+    - redis
+    - pdo_mysql
+    - opcache
+
+env:
+  PLATFORM_ROUTES: |
+    upstream:
+        type: http:php
+        base_path: "/"
+        url: "http://localhost:8080"
+    routes:
+        "/":
+            type: upstream
+            upstream: "upstream"
+  PLATFORM_APP_DIR: './'
+
+# The following hooks build your assets and clear the cache
+hooks:
+  build: |
+    # Install Node.js and NPM
+    export PLATFORM_NODE_VERSION=16
+    export PLATFORM_NPM_VERSION=latest
+    curl -s https://cdn.platform.sh/nodejs/v$PLATFORM_NODE_VERSION/setup.sh | bash
+    export PATH="$PLATFORM_APP_DIR/.node/bin:$PATH"
+    npm install
+    
+    # Build assets with Vite
+    npm run dev
+
+  deploy: |
+    # Clear the cache
+    bin/console cache:clear
