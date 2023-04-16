@@ -11,6 +11,7 @@ var/                    # Ignore Symfony's var directory
 
 # Files
 .env                    # Ignore environment files
+.env.local              # Ignore local environment files
 *.log                   # Ignore log files
 *.swp                   # Ignore Vim swap files
 *.sqlite                # Ignore SQLite databases
