@@ -26,3 +26,18 @@ var/                    # Ignore Symfony's var directory
 .idea/                 # Ignore PhpStorm project files
 .vscode/               # Ignore Visual Studio Code workspace settings
 
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> pentatrion/vite-bundle ###
+/node_modules/
+/public/build/
+###< pentatrion/vite-bundle ###
