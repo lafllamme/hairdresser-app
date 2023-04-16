@@ -10,12 +10,21 @@ import './styles/app.css';
 
 // start the Stimulus application
 import './bootstrap';
+import 'flowbite';
 
 import {createApp} from "vue";
 import App from "./vue/App.vue";
 import ModeSwitcher from "./vue/patterns/ModeSwitcher.vue";
+import ImageSlider from "./vue/components/image-slider.vue";
+import StickyBanner from "./vue/patterns/StickyBanner.vue";
+import ServiceInfo from "./vue/components/service-info.vue";
 
 const app = createApp({});
+
 app.component('App', App);
 app.component('ModeSwitcher', ModeSwitcher);
+app.component('ImageSlider', ImageSlider);
+app.component('StickyBanner', StickyBanner);
+app.component('ServiceInfo', ServiceInfo);
+
 app.mount('#app');
