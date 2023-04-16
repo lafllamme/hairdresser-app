@@ -1,5 +1,5 @@
 # Directories
-node_modules           # Ignore Node.js packages
+node_modules/           # Ignore Node.js packages
 vendor/                 # Ignore Composer packages
 public/build/           # Ignore Vite's build output
 public/bundles/         # Ignore Symfony's asset bundles
