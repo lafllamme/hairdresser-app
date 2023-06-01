@@ -1,6 +1,6 @@
 <template>
-  <div class="container justify-center text-center">
-    <header>
+  <div>
+    <header class="mb-5">
       <!-- We want header content here -->
       <slot name="header"></slot>
     </header>
