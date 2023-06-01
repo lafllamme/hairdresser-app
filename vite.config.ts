@@ -15,12 +15,14 @@ export default defineConfig({
             vue: 'vue/dist/vue.esm-bundler.js',
         }
     },
+    base: '/build/',
     build: {
+        outDir: './public/build',
         rollupOptions: {
             input: {
                 app: "./assets/app.ts",
                 /* you can also provide css files to prevent FOUC */
-                styles: "./assets/styles/app.css"
+                styles: "./assets/styles/app.scss"
             },
         }
     },
