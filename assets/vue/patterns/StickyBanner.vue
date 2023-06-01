@@ -1,7 +1,6 @@
 <template>
-
   <div id="sticky-banner" tabindex="-1"
-       class="fixed top-0 left-0 z-50 flex justify-between w-full p-4 border-b border-gray-200 bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
+       class="fixed top-0 left-0 z-50 flex justify-between text-center w-full p-4 border-b border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
     <div class="flex items-center mx-auto">
       <p class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
             <span class="inline-flex p-1 mr-3 bg-gray-200 rounded-full dark:bg-gray-600">
@@ -13,9 +12,9 @@
                 </svg>
                 <span class="sr-only">Light bulb</span>
             </span>
-        <span>New brand identity has been launched for the
+        <span>Wilkommen bei Wunderhaar! <br/><span>Buchen Sie jetzt einen </span>
           <a href="https://flowbite.com"
-             class="inline font-medium text-blue-600 underline dark:text-blue-500 underline-offset-2 decoration-600 dark:decoration-500 decoration-solid hover:no-underline">Flowbite Library</a></span>
+             class="inline font-medium text-blue-600 underline dark:text-blue-500 underline-offset-2 decoration-600 dark:decoration-500 decoration-solid hover:no-underline">Termin!</a></span>
       </p>
     </div>
     <div class="flex items-center">
