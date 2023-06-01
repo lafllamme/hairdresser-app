@@ -6,11 +6,12 @@
  */
 
 // any CSS you import will output into a single css file (app.css in this case)
-import './styles/app.css';
+import './styles/app.scss';
 
 // start the Stimulus application
 import './bootstrap';
 import 'flowbite';
+
 
 import {createApp} from "vue";
 import App from "./vue/App.vue";
@@ -18,6 +19,7 @@ import ModeSwitcher from "./vue/patterns/ModeSwitcher.vue";
 import ImageSlider from "./vue/components/image-slider.vue";
 import StickyBanner from "./vue/patterns/StickyBanner.vue";
 import ServiceInfo from "./vue/components/service-info.vue";
+import ImagePlaceholder from "./vue/patterns/skeletons/image-placeholder.vue";
 
 const app = createApp({});
 
@@ -26,5 +28,6 @@ app.component('ModeSwitcher', ModeSwitcher);
 app.component('ImageSlider', ImageSlider);
 app.component('StickyBanner', StickyBanner);
 app.component('ServiceInfo', ServiceInfo);
+app.component('ImagePlaceholder', ImagePlaceholder);
 
 app.mount('#app');
