@@ -1,35 +1,35 @@
 <template>
 
-  <div id="gallery" class="relative w-full" data-carousel="slide">
+  <div id="gallery" class="relative w-full mb-6" data-carousel="slide">
     <!-- Carousel wrapper -->
     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
       <!-- Item 1 -->
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+        <img src="https://media.glamourmagazine.co.uk/photos/63b6e672543f9ea0cca5f090/2:3/w_1280,h_1920,c_limit/HAIRSTYLE%20IDEAS%20050123%20default-sq.jpg"
              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
              alt="">
       </div>
       <!-- Item 2 -->
       <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+        <img src="https://media.glamourmagazine.co.uk/photos/63b6e672543f9ea0cca5f090/2:3/w_1280,h_1920,c_limit/HAIRSTYLE%20IDEAS%20050123%20default-sq.jpg"
              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
              alt="">
       </div>
       <!-- Item 3 -->
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+        <img src="https://media.glamourmagazine.co.uk/photos/63b6e672543f9ea0cca5f090/2:3/w_1280,h_1920,c_limit/HAIRSTYLE%20IDEAS%20050123%20default-sq.jpg"
              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
              alt="">
       </div>
       <!-- Item 4 -->
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+        <img src="https://media.glamourmagazine.co.uk/photos/63b6e672543f9ea0cca5f090/2:3/w_1280,h_1920,c_limit/HAIRSTYLE%20IDEAS%20050123%20default-sq.jpg"
              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
              alt="">
       </div>
       <!-- Item 5 -->
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
+        <img src="https://media.glamourmagazine.co.uk/photos/63b6e672543f9ea0cca5f090/2:3/w_1280,h_1920,c_limit/HAIRSTYLE%20IDEAS%20050123%20default-sq.jpg"
              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
              alt="">
       </div>
@@ -64,5 +64,38 @@
 </template>
 <script setup lang="ts">
 
+import {onMounted} from "vue";
+
+/*
+const sleep = async (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
+await sleep(1000);
+*/
+
+
+
+
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+/*.fast-gradient {
+  background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.4)
+  );
+  background-size: 200% 200%;
+  animation: gradient 2s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}*/
+</style>
