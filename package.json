@@ -21,6 +21,7 @@
     "@headlessui/vue": "^1.7.12",
     "@vitejs/plugin-vue": "^4.1.0",
     "flowbite": "^1.6.5",
+    "sass": "^1.62.0",
     "vite": "^4.2.1",
     "vite-plugin-symfony": "^0.7.6"
   },
